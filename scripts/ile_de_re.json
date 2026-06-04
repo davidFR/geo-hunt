@@ -1,0 +1,247 @@
+{
+  "game": {
+    "name": "Tour de l'île de Ré",
+    "version": "2026-05-29.1",
+    "startAt": "2026-06-01T14:00:00+02:00",
+    "defaultRadiusMeter": 50
+  },
+  "solution": {
+    "value": "Selon la légende, l'île serait née d'un séisme et d'un raz-de-marée, engloutissant la cité d'Antioche.",
+    "split": "mot"
+  },
+  "map": {
+    "gridMeters": 2300
+  },
+  "homeMarkdownLines": [
+    "# Programme",
+    "## 1er jour",
+    "- 08:00 – Petit-déjeuner",
+    "- 09:00 – Sortie vélo Sud de l'île",
+    "- 12:00 – Déjeuner",
+    "- 15:00 – Tournoi scrabble",
+    "- 18:00 – Apéro",
+    "- 19:00 – Diner",
+    "## 2e jour",
+    "- 08:00 – Petit-déjeuner",
+    "- 09:00 – Sortie vélo Nord de l'île",
+    "- 12:00 – Déjeuner",
+    "- 15:00 – Diaporama de vacances",
+    "- 17:00 – Clôture",
+    "# Les groupes",
+    "## Groupe 1",
+    "- Papi, Mamie, Oncle Jean",
+    "## Groupe 2",
+    "- Papa, Maman, Tata Jeanne",
+    "## Groupe 3",
+    "- Les enfants"
+  ],
+  "questions": [
+    {
+      "prompt": "Quel est le nom de la fille de Mathieu ?",
+      "exactAnswer": "Aline"
+    },
+    {
+      "prompt": "Quelle est la couleur préférée de Maman ?",
+      "exactAnswer": "Bleu"
+    },
+    {
+      "prompt": "Quel est le slogan de votre équipe ?",
+      "minWords": 4
+    },
+    {
+      "prompt": "Choississez la couleur de votre équipe",
+      "minWords": 1
+    }
+  ],
+  "defis": [
+    "L’esprit d’équipe",
+    "Une famille soudée",
+    "Pirates !",
+    "Un pour tous, tous en vélo",
+    "Prise de tête en famille"
+  ],
+  "places": [
+    {
+      "hint": "Point test GPS : entrée de l'île de Ré",
+      "name": "Entrée de l'île de Ré",
+      "coordinates": "46.16209369043062, -1.2581452759030722",
+      "specialType": "GPS_TEST",
+      "radiusMeters" : 80,
+      "testMessage": "Géolocalisation réussie - votre position est suffisamment précise pour jouer."
+    },
+    {
+      "hint": "Saint-Clément-des-Baleines : le phare des Baleines",
+      "name" : "Le phare des Baleines",
+      "coordinates": "46.24421543035579, -1.561109814925404",
+      "anecdote": "Mis en service en 1854, le phare des Baleines reste l'un des symboles les plus connus de l'île de Ré."
+    },
+    {
+      "hint": "Refuge des sauveteurs face à l’océan",
+      "name" : "Abri du canot de sauvetage",
+      "coordinates": "46.2412004378898, -1.5617976307129895",
+      "anecdote": "Ces abris rappellent le rôle historique des sauveteurs en mer pour sécuriser la côte."
+    },
+    {
+      "hint": "Repère insolite pour les marins perdus",
+      "name" : "La Pyramide des Chaumes",
+      "coordinates": "46.243546388670495, -1.5534280640093392",
+      "anecdote": "Cette pyramide servait autrefois de point de repère pour guider les marins vers la côte de Ré."
+    },
+    {
+      "hint": "Elle protège les marins et les pêcheurs de l’île",
+      "name" : "Chapelle De La Redoute - Notre Dame Des Marins",
+      "coordinates": "46.248104724365966, -1.4851148317875182",
+      "anecdote": "Cette chapelle, construite au XIXe siècle, est dédiée à Notre-Dame des Marins, protectrice des pêcheurs et marins de l'île."
+    },
+    {
+      "hint": "Entre La Flotte et Rivedoux : fortifions-nous",
+      "name" : "Fort La Prée",
+      "coordinates": "46.18075302056117, -1.288699780424664",
+      "radiusMeters" : 130,
+      "anecdote": "Fort La Prée est la plus ancienne fortification de l'île, construite en 1626 sous Richelieu."
+    },
+    {
+      "hint": "Clocher noir et blanc, phare des navigateurs",
+      "name" : "Eglise d'Ars-en-Ré",
+      "coordinates": "46.20782016748613, -1.5156334494630086",
+      "anecdote": "Son clocher noir et blanc servait de repère aux navigateurs pour éviter les bancs de sable."
+    },
+    {
+      "hint": "Ruines mystérieuses au cœur des champs",
+      "name" : "Abbaye des Châteliers",
+      "coordinates": "46.18582657617541, -1.2973742784337656",
+      "anecdote": "Fondée au XIIe siècle, l'abbaye fut pillée à plusieurs reprises lors des guerres de Religion."
+    },
+    {
+      "hint": "Vue imprenable depuis le clocher observatoire",
+      "name" : "Eglise de Saint-Martin de Ré et son Clocher Observatoire",
+      "coordinates": "46.20317446085296, -1.3684762548873834",
+      "anecdote": "Le clocher servait de poste d'observation pour prévenir les attaques de pirates."
+    },
+    {
+      "hint": "Entrée fortifiée, témoin des sièges passés",
+      "name" : "Porte Thoiras",
+      "coordinates": "46.20043589090053, -1.361600972937928",
+      "anecdote": "Cette porte monumentale fut nommée en l'honneur du gouverneur qui défendit l'île contre les Anglais en 1627."
+    },
+    {
+      "hint": "Ancien arsenal caché dans les remparts",
+      "name" : "La poudrière",
+      "coordinates": "46.199516286032164, -1.3631291467158886",
+      "anecdote": "Cette poudrière abritait autrefois la réserve de poudre pour les fortifications de la ville."
+    },
+    {
+      "hint": "Plage sauvage et pêcheries ancestrales",
+      "name" : "La plage du Grouin",
+      "coordinates": "46.22703567773298, -1.4160239665865793",
+      "radiusMeters" : 200,
+      "anecdote": "Cette plage est réputée pour ses paysages sauvages et ses anciennes pêcheries en pierre."
+    },
+    {
+      "hint": "Moulin à vent, gardien des récoltes d’antan",
+      "name" : "Le Moulin de Bellère",
+      "coordinates": "46.19347909070046, -1.3701488800328823",
+      "anecdote": "Ce moulin à vent témoigne de l'importance de la culture céréalière sur l'île jusqu'au XIXe siècle."
+    },
+    {
+      "hint": "Découverte de la nature et des marais salants",
+      "name" : "Maison du Fier",
+      "coordinates": "46.24059564602441, -1.5036885922911911",
+      "radiusMeters" : 50,
+      "anecdote": "La Maison du Fier est aujourd'hui un espace muséographique dédié à la nature et aux marais salants."
+    },
+    {
+      "hint": "Petit phare discret, guide des navigateurs",
+      "name" : "La Maison-Phare de Trousse-Chemise",
+      "coordinates": "46.23523265668335, -1.481594791992791",
+      "radiusMeters" : 40,
+      "anecdote": "Ce phare discret guide les bateaux à travers les dangereux bancs de sable du Fier d'Ars."
+    },
+    {
+      "hint": "Rempart contre les tempêtes de l’Atlantique",
+      "name" : "La Digue du Boutillon",
+      "coordinates": "46.20321648149895, -1.472964591823978",
+      "radiusMeters" : 400,
+      "anecdote": "Cette digue protège l'île des tempêtes depuis le XIXe siècle et a été plusieurs fois reconstruite."
+    },
+    {
+      "hint": "Surveillance et secrets des douaniers",
+      "name" : "Les Cabanes de Douaniers d’Ars-en-Ré",
+      "coordinates": "46.19444760228498, -1.5001853999608747",
+      "radiusMeters" : 50,
+      "anecdote": "Ces cabanes servaient autrefois à surveiller la contrebande de sel et d'alcool."
+    },
+    {
+      "hint": "Vestige de la guerre, témoin du passé militaire",
+      "name" : "Ancienne Batterie de Sablanceaux",
+      "coordinates": "46.16066716778661, -1.2599934134233797",
+      "radiusMeters" : 100,
+      "anecdote": "Cette batterie fut construite par les Allemands pendant la Seconde Guerre mondiale pour défendre l'île contre les attaques alliées."
+    },
+    {
+      "hint": "Sur la plage : blockhaus A, B ou C ?",
+      "name" : "Le Bois-Plage-en-Ré : Batterie Hertha B",
+      "coordinates": "46.184458530175405, -1.411198476196625",
+      "anecdote": "Ce blockhaus fait partie du Mur de l'Atlantique construit par l'armée allemande pendant la Seconde Guerre mondiale."
+    },
+    {
+      "hint": "La capitainerie d’Ars-en-Ré",
+      "name" : "Ars-en-Ré : la capitainerie",
+      "coordinates": "46.214080218220374, -1.508528337305456",
+      "anecdote": "La capitainerie d'Ars-en-Ré est le centre administratif du port et joue un rôle clé dans la gestion maritime locale."
+    },
+    {
+      "hint": "Le blockhaus de la Plage de La Salée",
+      "name" : "Sainte-Marie-de-Ré : Batterie Ella",
+      "coordinates": "46.146435962318016, -1.3236524162807268",
+      "anecdote": "Ce vestige militaire témoigne de l'occupation allemande et de la stratégie défensive du littoral."
+    },
+    {
+      "hint": "La bouée rouge américaine",
+      "name" : "La bouée rouge américaine",
+      "coordinates": "46.19436239209493, -1.5065186225675848",
+      "radiusMeters" : 100,
+      "anecdote": "Cette bouée fut installée par les Alliés pour faciliter le débarquement et la navigation en 1944."
+    },
+    {
+      "hint": "Plage de Port Notre Dame",
+      "name" : "Plage de Port Notre Dame",
+      "coordinates": "46.1444983815792, -1.296558361409013",
+      "anecdote": "Cette plage était autrefois un port naturel utilisé par les pêcheurs locaux."
+    },
+    {
+      "hint": "Loix : Les éveillards",
+      "name" : "Les éveillards",
+      "coordinates": "46.213663573979346, -1.4408286996583721",
+      "radiusMeters" : 80,
+      "anecdote": "Ce secteur est réputé pour ses marais salants et ses oiseaux migrateurs."
+    }, 
+    {
+      "hint": "Loix : Plage de la Mer du Nord",
+      "name" : "Loix : Plage de la Mer du Nord",
+      "coordinates": "46.20524495649141, -1.4261063206852649",
+      "radiusMeters" : 100,
+      "anecdote": "Cette plage tire son nom de la ressemblance de ses paysages avec ceux de la mer du Nord."
+    }, {
+      "hint": "Le point culminant de l'île de Ré",
+      "name" : "Stèle du Peu des Aumonts",
+      "coordinates": "46.17641797827524, -1.3647672874705226",
+      "radiusMeters" : 100,
+      "anecdote": "Ce point culmine à 19 mètres, offrant un panorama unique sur toute l'île."
+    }, 
+    {
+      "hint": "Plage de l’Anse Imbert",
+      "name" : "Plage de l’Anse Imbert",
+      "coordinates": "46.15461185410263, -1.3489553603073563",
+      "radiusMeters" : 80,
+      "anecdote": "Cette anse abritée était un lieu de mouillage apprécié des petits bateaux."
+    },
+    {
+      "hint": "Le port de La Flotte",
+      "name" : "Le port de La Flotte",
+      "coordinates": "46.18798961325552, -1.324058526557122",
+      "radiusMeters" : 100,
+      "anecdote": "Ce port pittoresque est l'un des plus anciens de l'île, actif depuis le Moyen Âge."
+    }
+  ]
+}

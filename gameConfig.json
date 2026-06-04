@@ -1,0 +1,427 @@
+{
+  "game": {
+    "id": "e3ffcf62282e",
+    "name": "Tour de l'île de Ré",
+    "defaultRadiusMeter": 50,
+    "version": "2026-05-29.1",
+    "startAt": "2026-06-01T14:00:00+02:00"
+  },
+  "zones": [
+    {
+      "id": "e645e67ac7c1334e",
+      "hint": "Point test GPS : entrée de l'île de Ré",
+      "center": {
+        "lat": 46.16209369043062,
+        "lng": -1.2581452759030722
+      },
+      "reward": {
+        "type": "NOTHING",
+        "message": "Géolocalisation réussie - votre position est suffisamment précise pour jouer."
+      },
+      "name": "Entrée de l'île de Ré",
+      "radiusMeters": 80,
+      "specialType": "GPS_TEST"
+    },
+    {
+      "id": "d9d58f5387bf1daf",
+      "hint": "Saint-Clément-des-Baleines : le phare des Baleines",
+      "center": {
+        "lat": 46.24421543035579,
+        "lng": -1.561109814925404
+      },
+      "reward": {
+        "type": "NOTHING"
+      },
+      "name": "Le phare des Baleines",
+      "anecdote": "Mis en service en 1854, le phare des Baleines reste l'un des symboles les plus connus de l'île de Ré."
+    },
+    {
+      "id": "0b0e92ad19d7fe63",
+      "hint": "Refuge des sauveteurs face à l’océan",
+      "center": {
+        "lat": 46.2412004378898,
+        "lng": -1.5617976307129895
+      },
+      "reward": {
+        "type": "REWARD",
+        "value": "5=serait"
+      },
+      "name": "Abri du canot de sauvetage",
+      "anecdote": "Ces abris rappellent le rôle historique des sauveteurs en mer pour sécuriser la côte."
+    },
+    {
+      "id": "305fd1320097a02e",
+      "hint": "Repère insolite pour les marins perdus",
+      "center": {
+        "lat": 46.243546388670495,
+        "lng": -1.5534280640093392
+      },
+      "reward": {
+        "type": "REWARD",
+        "value": "9=et"
+      },
+      "name": "La Pyramide des Chaumes",
+      "anecdote": "Cette pyramide servait autrefois de point de repère pour guider les marins vers la côte de Ré."
+    },
+    {
+      "id": "887fca0f88af1b7d",
+      "hint": "Elle protège les marins et les pêcheurs de l’île",
+      "center": {
+        "lat": 46.248104724365966,
+        "lng": -1.4851148317875182
+      },
+      "reward": {
+        "type": "REWARD",
+        "value": "10=d'un"
+      },
+      "name": "Chapelle De La Redoute - Notre Dame Des Marins",
+      "anecdote": "Cette chapelle, construite au XIXe siècle, est dédiée à Notre-Dame des Marins, protectrice des pêcheurs et marins de l'île."
+    },
+    {
+      "id": "d70184a21ffc55b1",
+      "hint": "Entre La Flotte et Rivedoux : fortifions-nous",
+      "center": {
+        "lat": 46.18075302056117,
+        "lng": -1.288699780424664
+      },
+      "reward": {
+        "type": "DEFIPHOTO",
+        "value": "Un pour tous, tous en vélo"
+      },
+      "name": "Fort La Prée",
+      "anecdote": "Fort La Prée est la plus ancienne fortification de l'île, construite en 1626 sous Richelieu.",
+      "radiusMeters": 130
+    },
+    {
+      "id": "b7a328aa5cc5414f",
+      "hint": "Clocher noir et blanc, phare des navigateurs",
+      "center": {
+        "lat": 46.20782016748613,
+        "lng": -1.5156334494630086
+      },
+      "reward": {
+        "type": "REWARD",
+        "value": "6=née"
+      },
+      "name": "Eglise d'Ars-en-Ré",
+      "anecdote": "Son clocher noir et blanc servait de repère aux navigateurs pour éviter les bancs de sable."
+    },
+    {
+      "id": "e38c6988151fa725",
+      "hint": "Ruines mystérieuses au cœur des champs",
+      "center": {
+        "lat": 46.18582657617541,
+        "lng": -1.2973742784337656
+      },
+      "reward": {
+        "type": "REWARD",
+        "value": "12=engloutissant"
+      },
+      "name": "Abbaye des Châteliers",
+      "anecdote": "Fondée au XIIe siècle, l'abbaye fut pillée à plusieurs reprises lors des guerres de Religion."
+    },
+    {
+      "id": "32951da15c6a21f4",
+      "hint": "Vue imprenable depuis le clocher observatoire",
+      "center": {
+        "lat": 46.20317446085296,
+        "lng": -1.3684762548873834
+      },
+      "reward": {
+        "type": "NOTHING"
+      },
+      "name": "Eglise de Saint-Martin de Ré et son Clocher Observatoire",
+      "anecdote": "Le clocher servait de poste d'observation pour prévenir les attaques de pirates."
+    },
+    {
+      "id": "0156ec2ae3012db4",
+      "hint": "Entrée fortifiée, témoin des sièges passés",
+      "center": {
+        "lat": 46.20043589090053,
+        "lng": -1.361600972937928
+      },
+      "reward": {
+        "type": "REWARD",
+        "value": "7=d'un"
+      },
+      "name": "Porte Thoiras",
+      "anecdote": "Cette porte monumentale fut nommée en l'honneur du gouverneur qui défendit l'île contre les Anglais en 1627.",
+      "question": {
+        "prompt": "Quel est le nom de la fille de Mathieu ?",
+        "exactAnswer": "Aline"
+      }
+    },
+    {
+      "id": "c02047cfcd0a7837",
+      "hint": "Ancien arsenal caché dans les remparts",
+      "center": {
+        "lat": 46.199516286032164,
+        "lng": -1.3631291467158886
+      },
+      "reward": {
+        "type": "DEFIPHOTO",
+        "value": "L’esprit d’équipe"
+      },
+      "name": "La poudrière",
+      "anecdote": "Cette poudrière abritait autrefois la réserve de poudre pour les fortifications de la ville."
+    },
+    {
+      "id": "3089a85bd3e8568a",
+      "hint": "Plage sauvage et pêcheries ancestrales",
+      "center": {
+        "lat": 46.22703567773298,
+        "lng": -1.4160239665865793
+      },
+      "reward": {
+        "type": "NOTHING"
+      },
+      "name": "La plage du Grouin",
+      "anecdote": "Cette plage est réputée pour ses paysages sauvages et ses anciennes pêcheries en pierre.",
+      "question": {
+        "prompt": "Quelle est la couleur préférée de Maman ?",
+        "exactAnswer": "Bleu"
+      },
+      "radiusMeters": 200
+    },
+    {
+      "id": "f22cc82ae1b1d9ea",
+      "hint": "Moulin à vent, gardien des récoltes d’antan",
+      "center": {
+        "lat": 46.19347909070046,
+        "lng": -1.3701488800328823
+      },
+      "reward": {
+        "type": "REWARD",
+        "value": "14=cité"
+      },
+      "name": "Le Moulin de Bellère",
+      "anecdote": "Ce moulin à vent témoigne de l'importance de la culture céréalière sur l'île jusqu'au XIXe siècle."
+    },
+    {
+      "id": "a7f2bfe32eb06d29",
+      "hint": "Découverte de la nature et des marais salants",
+      "center": {
+        "lat": 46.24059564602441,
+        "lng": -1.5036885922911911
+      },
+      "reward": {
+        "type": "REWARD",
+        "value": "2=la"
+      },
+      "name": "Maison du Fier",
+      "anecdote": "La Maison du Fier est aujourd'hui un espace muséographique dédié à la nature et aux marais salants.",
+      "radiusMeters": 50
+    },
+    {
+      "id": "d9644ff4ca1f9ac6",
+      "hint": "Petit phare discret, guide des navigateurs",
+      "center": {
+        "lat": 46.23523265668335,
+        "lng": -1.481594791992791
+      },
+      "reward": {
+        "type": "NOTHING"
+      },
+      "name": "La Maison-Phare de Trousse-Chemise",
+      "anecdote": "Ce phare discret guide les bateaux à travers les dangereux bancs de sable du Fier d'Ars.",
+      "radiusMeters": 40
+    },
+    {
+      "id": "4e279bbc2c35631a",
+      "hint": "Rempart contre les tempêtes de l’Atlantique",
+      "center": {
+        "lat": 46.20321648149895,
+        "lng": -1.472964591823978
+      },
+      "reward": {
+        "type": "DEFIPHOTO",
+        "value": "Prise de tête en famille"
+      },
+      "name": "La Digue du Boutillon",
+      "anecdote": "Cette digue protège l'île des tempêtes depuis le XIXe siècle et a été plusieurs fois reconstruite.",
+      "question": {
+        "prompt": "Choississez la couleur de votre équipe",
+        "minWords": 1
+      },
+      "radiusMeters": 400
+    },
+    {
+      "id": "99e1f7e5d05b9e46",
+      "hint": "Surveillance et secrets des douaniers",
+      "center": {
+        "lat": 46.19444760228498,
+        "lng": -1.5001853999608747
+      },
+      "reward": {
+        "type": "NOTHING"
+      },
+      "name": "Les Cabanes de Douaniers d’Ars-en-Ré",
+      "anecdote": "Ces cabanes servaient autrefois à surveiller la contrebande de sel et d'alcool.",
+      "radiusMeters": 50
+    },
+    {
+      "id": "a49fb202cfe82132",
+      "hint": "Vestige de la guerre, témoin du passé militaire",
+      "center": {
+        "lat": 46.16066716778661,
+        "lng": -1.2599934134233797
+      },
+      "reward": {
+        "type": "REWARD",
+        "value": "1=Selon"
+      },
+      "name": "Ancienne Batterie de Sablanceaux",
+      "anecdote": "Cette batterie fut construite par les Allemands pendant la Seconde Guerre mondiale pour défendre l'île contre les attaques alliées.",
+      "radiusMeters": 100
+    },
+    {
+      "id": "38910468324ce4f6",
+      "hint": "Sur la plage : blockhaus A, B ou C ?",
+      "center": {
+        "lat": 46.184458530175405,
+        "lng": -1.411198476196625
+      },
+      "reward": {
+        "type": "DEFIPHOTO",
+        "value": "Une famille soudée"
+      },
+      "name": "Le Bois-Plage-en-Ré : Batterie Hertha B",
+      "anecdote": "Ce blockhaus fait partie du Mur de l'Atlantique construit par l'armée allemande pendant la Seconde Guerre mondiale."
+    },
+    {
+      "id": "ae332ce754b6ed6b",
+      "hint": "La capitainerie d’Ars-en-Ré",
+      "center": {
+        "lat": 46.214080218220374,
+        "lng": -1.508528337305456
+      },
+      "reward": {
+        "type": "REWARD",
+        "value": "11=raz-de-marée,"
+      },
+      "name": "Ars-en-Ré : la capitainerie",
+      "anecdote": "La capitainerie d'Ars-en-Ré est le centre administratif du port et joue un rôle clé dans la gestion maritime locale."
+    },
+    {
+      "id": "1a94b6c39aa01aba",
+      "hint": "Le blockhaus de la Plage de La Salée",
+      "center": {
+        "lat": 46.146435962318016,
+        "lng": -1.3236524162807268
+      },
+      "reward": {
+        "type": "REWARD",
+        "value": "3=légende,"
+      },
+      "name": "Sainte-Marie-de-Ré : Batterie Ella",
+      "anecdote": "Ce vestige militaire témoigne de l'occupation allemande et de la stratégie défensive du littoral."
+    },
+    {
+      "id": "eddd7497a938937f",
+      "hint": "La bouée rouge américaine",
+      "center": {
+        "lat": 46.19436239209493,
+        "lng": -1.5065186225675848
+      },
+      "reward": {
+        "type": "REWARD",
+        "value": "13=la"
+      },
+      "name": "La bouée rouge américaine",
+      "anecdote": "Cette bouée fut installée par les Alliés pour faciliter le débarquement et la navigation en 1944.",
+      "question": {
+        "prompt": "Quel est le slogan de votre équipe ?",
+        "minWords": 4
+      },
+      "radiusMeters": 100
+    },
+    {
+      "id": "1a24e1d0f7fae280",
+      "hint": "Plage de Port Notre Dame",
+      "center": {
+        "lat": 46.1444983815792,
+        "lng": -1.296558361409013
+      },
+      "reward": {
+        "type": "NOTHING"
+      },
+      "name": "Plage de Port Notre Dame",
+      "anecdote": "Cette plage était autrefois un port naturel utilisé par les pêcheurs locaux."
+    },
+    {
+      "id": "d1e87025c7c06390",
+      "hint": "Loix : Les éveillards",
+      "center": {
+        "lat": 46.213663573979346,
+        "lng": -1.4408286996583721
+      },
+      "reward": {
+        "type": "REWARD",
+        "value": "8=séisme"
+      },
+      "name": "Les éveillards",
+      "anecdote": "Ce secteur est réputé pour ses marais salants et ses oiseaux migrateurs.",
+      "radiusMeters": 80
+    },
+    {
+      "id": "41a8547a1f032ba3",
+      "hint": "Loix : Plage de la Mer du Nord",
+      "center": {
+        "lat": 46.20524495649141,
+        "lng": -1.4261063206852649
+      },
+      "reward": {
+        "type": "REWARD",
+        "value": "4=l'île"
+      },
+      "name": "Loix : Plage de la Mer du Nord",
+      "anecdote": "Cette plage tire son nom de la ressemblance de ses paysages avec ceux de la mer du Nord.",
+      "radiusMeters": 100
+    },
+    {
+      "id": "006cd14136c3418f",
+      "hint": "Le point culminant de l'île de Ré",
+      "center": {
+        "lat": 46.17641797827524,
+        "lng": -1.3647672874705226
+      },
+      "reward": {
+        "type": "DEFIPHOTO",
+        "value": "Pirates !"
+      },
+      "name": "Stèle du Peu des Aumonts",
+      "anecdote": "Ce point culmine à 19 mètres, offrant un panorama unique sur toute l'île.",
+      "radiusMeters": 100
+    },
+    {
+      "id": "afe84b872fc97782",
+      "hint": "Plage de l’Anse Imbert",
+      "center": {
+        "lat": 46.15461185410263,
+        "lng": -1.3489553603073563
+      },
+      "reward": {
+        "type": "NOTHING"
+      },
+      "name": "Plage de l’Anse Imbert",
+      "anecdote": "Cette anse abritée était un lieu de mouillage apprécié des petits bateaux.",
+      "radiusMeters": 80
+    },
+    {
+      "id": "f0458c08c0b7ae07",
+      "hint": "Le port de La Flotte",
+      "center": {
+        "lat": 46.18798961325552,
+        "lng": -1.324058526557122
+      },
+      "reward": {
+        "type": "REWARD",
+        "value": "15=d'Antioche."
+      },
+      "name": "Le port de La Flotte",
+      "anecdote": "Ce port pittoresque est l'un des plus anciens de l'île, actif depuis le Moyen Âge.",
+      "radiusMeters": 100
+    }
+  ],
+  "homeHtml": "<h1 class=\"title\">Programme</h1>\n<h2 class=\"home-title\">1er jour</h2>\n<ul class=\"home-list\">\n<li>08:00 – Petit-déjeuner</li>\n<li>09:00 – Sortie vélo Sud de l&#39;île</li>\n<li>12:00 – Déjeuner</li>\n<li>15:00 – Tournoi scrabble</li>\n<li>18:00 – Apéro</li>\n<li>19:00 – Diner</li>\n</ul>\n<h2 class=\"home-title\">2e jour</h2>\n<ul class=\"home-list\">\n<li>08:00 – Petit-déjeuner</li>\n<li>09:00 – Sortie vélo Nord de l&#39;île</li>\n<li>12:00 – Déjeuner</li>\n<li>15:00 – Diaporama de vacances</li>\n<li>17:00 – Clôture</li>\n</ul>\n<h1 class=\"title\">Les groupes</h1>\n<h2 class=\"home-title\">Groupe 1</h2>\n<ul class=\"home-list\">\n<li>Papi, Mamie, Oncle Jean</li>\n</ul>\n<h2 class=\"home-title\">Groupe 2</h2>\n<ul class=\"home-list\">\n<li>Papa, Maman, Tata Jeanne</li>\n</ul>\n<h2 class=\"home-title\">Groupe 3</h2>\n<ul class=\"home-list\">\n<li>Les enfants</li>\n</ul>"
+}

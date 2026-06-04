@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Validation locale de zones de jeu par géolocalisation navigateur.">
+  <title>Chargement du jeu...</title>
+  <link rel="stylesheet" href="vendor/leaflet/leaflet.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section id="helpPanel" class="card help-panel" hidden aria-label="Aide">
+    <div class="help-panel__head">
+      <h2>Aide</h2>
+      <button id="helpClose" class="help-close" type="button" aria-label="Fermer l'aide">Fermer</button>
+    </div>
+    <h3>Règles du jeu</h3>
+    <ol class="help-steps">
+      <li>Autorisez la géolocalisation précise si le navigateur la demande.</li>
+      <li>Explorez la carte et touchez un lieu pour obtenir un indice.</li>
+      <li>Recherchez ces lieux.</li>
+      <li>Votre position est suivie automatiquement pendant le déplacement.</li>
+      <li>Quand vous arrivez au bon endroit, une récompense vous sera donnée.</li>
+    </ol>
+    <h3>Important</h3>
+    <ul class="rules-list">
+      <li>La géolocalisation navigateur doit être autorisée.</li>
+      <li>Les tracés verts indiquent les pistes cyclables conseillées pour vos trajets.</li>
+      <li>La précision GPS varie selon le téléphone et l'environnement donc persévérez.</li>
+      <li>Si la permission est refusée: Android (paramètres du navigateur > site/page > Position > Autoriser), iPhone (Réglages > Safari > Localisation > Autoriser), puis rechargez la page.</li>
+    </ul>
+    <h3>Confidentialité</h3>
+    <p>Toutes les informations (géolocalisation) sont stockées localement sur votre appareil. Rien ne sort de votre téléphone.</p>
+    <p id="gameInfo">Chargement des paramètres du jeu...</p>
+  </section>
+
+  <header class="site-header" role="banner">
+    <div class="site-header__inner">
+      <img id="siteLogo" src="assets/logo.svg" class="site-logo" alt="Logo du jeu">
+      <div class="site-header__texts">
+        <p id="siteName" class="eyebrow">Chargement du jeu...</p>
+      </div>
+      <div class="header-actions">
+        <button id="fullscreenToggle" class="help-fab fullscreen-fab" type="button" aria-label="Activer le plein écran" title="Activer le plein écran" aria-pressed="false">
+          <span class="fullscreen-fab__icon" aria-hidden="true"></span>
+          <span class="sr-only">Plein écran</span>
+        </button>
+        <button id="helpToggle" class="help-fab" type="button" aria-label="Ouvrir l'aide" aria-expanded="false" aria-controls="helpPanel">?</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="page">
+    <section id="overviewView" class="view view--active" aria-label="Interface principale">
+      <nav class="overview-tabs" role="tablist" aria-label="Navigation principale">
+        <button id="tabHome" class="overview-tab overview-tab--active" type="button" role="tab" aria-selected="true" aria-controls="homePanel">Accueil</button>
+        <button id="tabMap" class="overview-tab" type="button" role="tab" aria-selected="false" aria-controls="mapPanel">Carte</button>
+        <button id="tabPlaces" class="overview-tab" type="button" role="tab" aria-selected="false" aria-controls="placesPanel">Lieux</button>
+      </nav>
+
+      <div id="homePanel" class="card home-card" role="tabpanel" aria-labelledby="tabHome">
+        <section id="homeContent" class="home-section">
+          <p class="home-note">Chargement du programme...</p>
+        </section>
+      </div>
+
+      <div id="mapPanel" class="card map-stage-card" role="tabpanel" aria-labelledby="tabMap" hidden>
+        <div class="panel-intro map-top-row">
+          <p id="progressPill" class="progress-pill">0 / 0</p>
+          <div class="map-actions">
+            <span id="gpsQualityBadge" class="gps-quality-badge gps-quality-badge--red" aria-live="polite" hidden>
+              <span class="gps-quality-badge__bars" aria-hidden="true">
+                <span class="gps-quality-badge__bar gps-quality-badge__bar--1"></span>
+                <span class="gps-quality-badge__bar gps-quality-badge__bar--2"></span>
+                <span class="gps-quality-badge__bar gps-quality-badge__bar--3"></span>
+                <span class="gps-quality-badge__bar gps-quality-badge__bar--4"></span>
+              </span>
+              <span class="gps-quality-badge__label">GPS</span>
+            </span>
+          </div>
+        </div>
+        <div id="overviewMap" class="overview-map overview-map--large" role="img" aria-label="Carte interactive des lieux"></div>
+        <div id="overviewStatusBox" class="notice panel-intro" aria-live="polite" hidden></div>
+      </div>
+
+      <div id="placesPanel" class="card places-card" role="tabpanel" aria-labelledby="tabPlaces" hidden>
+        <ul id="placesList" class="places-list"></ul>
+      </div>
+    </section>
+
+    <section id="missionModal" class="mission-modal" hidden>
+      <button id="missionBackdrop" class="mission-modal__backdrop" type="button" aria-label="Fermer la mission"></button>
+      <div id="missionPanel" class="card mission-modal__panel" role="dialog" aria-modal="true" aria-labelledby="missionTitle">
+        <div class="mission-celebration" aria-hidden="true">
+          <span class="mission-celebration__spark"></span>
+          <span class="mission-celebration__spark"></span>
+          <span class="mission-celebration__spark"></span>
+          <span class="mission-celebration__spark"></span>
+          <span class="mission-celebration__spark"></span>
+          <span class="mission-celebration__spark"></span>
+          <span class="mission-celebration__spark"></span>
+          <span class="mission-celebration__spark"></span>
+        </div>
+        <button id="missionClose" class="mission-modal__close" type="button" aria-label="Fermer la mission">×</button>
+        <p id="missionMeta" class="mission-meta"></p>
+        <h2 id="missionTitle" class="mission-title">Mission</h2>
+        <p id="missionAnecdote" class="mission-anecdote" style="display:none"></p>
+        <p id="missionHint" class="mission-hint"></p>
+        <div id="missionStatusBox" class="notice" aria-live="polite" hidden></div>
+        <section id="questionPanel" class="question-panel" hidden>
+          <p id="questionPrompt" class="question-prompt"></p>
+          <label for="questionAnswer" class="label question-label">Votre réponse</label>
+          <input id="questionAnswer" class="input question-input" type="text" autocomplete="off" spellcheck="false">
+          <button id="questionSubmit" class="button button--secondary question-submit" type="button">Valider ma réponse</button>
+        </section>
+        <button id="geolocationButton" class="button mission-validate-btn" type="button">Valider ce lieu</button>
+      </div>
+    </section>
+  </main>
+
+  <noscript>
+    <p class="noscript">Cette application nécessite JavaScript pour accéder à la géolocalisation et valider les zones.</p>
+  </noscript>
+
+  <script src="vendor/leaflet/leaflet.js"></script>
+  <script src="poi-overview.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
