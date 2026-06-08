@@ -19,6 +19,14 @@ Le participant valide des lieux réels en entrant dans des zones GPS et découvr
 4. Si oui, le lieu est validé et une récompense est affichée.
 5. Les validations restent enregistrées localement sur l'appareil.
 
+## Développement assisté par IA
+
+Ce projet a été développé avec l’assistance d’outils d’intelligence artificielle (notamment GitHub Copilot).
+
+L’ensemble du code a fait l’objet d’une relecture, de validations et, le cas échéant, d’adaptations par un humain afin de garantir sa cohérence et sa qualité.
+
+Toutefois, aucune garantie n’est apportée quant à l’originalité complète du code ni à l’absence éventuelle d’éléments provenant de sources tierces. 
+
 ## Comment l'utiliser
 
 ### 1) Préparer la configuration
